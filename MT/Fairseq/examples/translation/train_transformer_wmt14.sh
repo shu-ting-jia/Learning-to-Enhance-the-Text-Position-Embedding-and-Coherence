@@ -25,13 +25,13 @@ mkdir -p checkpoints/${dataset}/transformer
 
 PYTHONIOENCODING=utf-8 fairseq-train \
     ${data_dir} \
-    --user-dir examples/translation/disentangled_transformer \
+    --user-dir examples/translation/rw_transformer \
     --arch ${arch} --share-all-embeddings \
     --optimizer adam --adam-betas '(0.9, 0.98)' --clip-norm 0.0 \
     --lr ${lr} --lr-scheduler inverse_sqrt --warmup-updates 4000 \
     --dropout ${dropout} --weight-decay ${weight_deacy} \
     --mi_loss_weight ${mi_loss_weight} \
-    --criterion disentangled_label_smoothed_cross_entropy --label-smoothing 0.1 \
+    --criterion rw_label_smoothed_cross_entropy --label-smoothing 0.1 \
     --max-tokens ${max_tokens} \
     --max-tokens-valid ${max_tokens_valid} \
     --update-freq ${update_freq} \
