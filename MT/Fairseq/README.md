@@ -29,24 +29,24 @@ This repository is developed under Fairseq framework.
 ## Model training
 * IWSLT'14 De-En
 ```
-> ./examples/translation/train_disentangled_transformer.sh
+> ./examples/translation/train_transformer.sh
 ```
 * WMT'14 En-De
 ```
-> ./examples/translation/train_disentangled_transformer.sh \
-  --dataset wmt14_en_de
+> ./examples/translation/train_transformer_wmt14.sh \
+ 
 ```
 
 ## Performance evaluation
 * IWSLT'14 De-En
 ```
-> ./examples/translation/evaluate_disentangled_transformer.sh
+> ./examples/translation/evaluate_transformer.sh
 ```
 * WMT'14 En-De
 ```
-> ./examples/translation/evaluate_disentangled_transformer.sh \
+> ./examples/translation/evaluate_transformer.sh \
   --dataset wmt14_en_de
 > bash ./scripts/compound_split_bleu.sh \
-  ./checkpoints/wmt14_en_de/disentangled_transformer/evaluate/evaluate.log
+  ./checkpoints/wmt14_en_de/transformer/evaluate/evaluate.log
 ```
 
