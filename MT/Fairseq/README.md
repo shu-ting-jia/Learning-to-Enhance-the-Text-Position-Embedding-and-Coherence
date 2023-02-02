@@ -5,6 +5,13 @@ This repository is developed under Fairseq framework.
 ```
 > pip install --editable ./ 
 > pip install -r requirements.txt
+> pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
+> pip install packaging
+> pip install sacrebleu==1.5.1
+> pip install numpy==1.23.2
+> pip install sklearn
+> pip install -U scikit-learn scipy matplotlib
+> pip install sacremoses
 ```
 ```
 > git clone https://github.com/NVIDIA/apex
@@ -19,32 +26,32 @@ This repository is developed under Fairseq framework.
 ## Data preprocessing
 * IWSLT'14 De-En
 ```
-> ./examples/translation/preprocess_iwslt14_de_en.sh
+> bash examples/translation/preprocess_iwslt14_de_en.sh
 ```
 * WMT'14 En-DE
 ```
-> ./examples/translation/preprocess_wmt14_en_de.sh
+> bash examples/translation/preprocess_wmt14_en_de.sh
 ```
 
 ## Model training
 * IWSLT'14 De-En
 ```
-> ./examples/translation/train_transformer.sh
+> bash examples/translation/train_transformer.sh
 ```
 * WMT'14 En-De
 ```
-> ./examples/translation/train_transformer_wmt14.sh \
+> bash examples/translation/train_transformer_wmt14.sh \
  
 ```
 
 ## Performance evaluation
 * IWSLT'14 De-En
 ```
-> ./examples/translation/evaluate_transformer.sh
+> bash examples/translation/evaluate_transformer.sh
 ```
 * WMT'14 En-De
 ```
-> ./examples/translation/evaluate_transformer.sh \
+> bash examples/translation/evaluate_transformer.sh \
   --dataset wmt14_en_de
 > bash ./scripts/compound_split_bleu.sh \
   ./checkpoints/wmt14_en_de/transformer/evaluate/evaluate.log
