@@ -4,8 +4,8 @@
 # LICENSE file in the root directory of this source tree.
 
 
-import sys
-sys.path.append("/root/RWtest/Learning-to-Enhance-the-Text-Position-Embedding-and-Coherence/MT/Fairseq")
+import sys,os
+sys.path.append(os.getcwd())
 print(sys.path)
 
 from examples.simultaneous_translation.utils.latency import LatencyTraining
