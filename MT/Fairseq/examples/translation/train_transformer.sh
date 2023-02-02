@@ -24,7 +24,7 @@ mkdir -p checkpoints/${dataset}/transformer
 
 PYTHONIOENCODING=utf-8 fairseq-train \
     ${data_dir} \
-    --user-dir examples/translation/disentangled_transformer \
+    --user-dir examples/translation/rw_transformer \
     --arch ${arch} --share-decoder-input-output-embed \
     --optimizer adam --adam-betas '(0.9, 0.98)' --clip-norm 0.0 \
     --lr ${lr} --lr-scheduler inverse_sqrt --warmup-updates 4000 \
