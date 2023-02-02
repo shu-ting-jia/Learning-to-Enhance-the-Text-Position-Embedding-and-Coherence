@@ -30,7 +30,7 @@ PYTHONIOENCODING=utf-8 fairseq-train \
     --lr ${lr} --lr-scheduler inverse_sqrt --warmup-updates 4000 \
     --dropout ${dropout} --weight-decay ${weight_deacy} \
     --mi_loss_weight ${mi_loss_weight} \
-    --criterion disentangled_label_smoothed_cross_entropy --label-smoothing 0.1 \
+    --criterion rw_label_smoothed_cross_entropy --label-smoothing 0.1 \
     --max-tokens ${max_tokens} \
     --max-tokens-valid ${max_tokens_valid} \
     --update-freq ${update_freq} \
