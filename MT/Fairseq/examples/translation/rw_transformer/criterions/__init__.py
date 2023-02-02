@@ -1,0 +1,1 @@
+from examples.translation.rw_transformer.criterions.rw_label_smoothed_cross_entropy import LabelSmoothedCrossEntropyCriterion
