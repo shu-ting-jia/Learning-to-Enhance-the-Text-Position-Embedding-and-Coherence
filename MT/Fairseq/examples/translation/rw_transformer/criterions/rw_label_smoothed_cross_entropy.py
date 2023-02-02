@@ -406,7 +406,7 @@ class LabelSmoothedCrossEntropyCriterion(FairseqCriterion):
             _cluster_loss = _cluster_div_loss = _mi_loss =_enc_pos_loss=_dec_pos_loss=torch.zeros((1,)).to(net_output[0].device)
             
         
-            _enc_pos_loss=(2*0.75)*enc_pos_loss(model,net_output)
+            _enc_pos_loss=(2)*enc_pos_loss(model,net_output)
             
             
         
