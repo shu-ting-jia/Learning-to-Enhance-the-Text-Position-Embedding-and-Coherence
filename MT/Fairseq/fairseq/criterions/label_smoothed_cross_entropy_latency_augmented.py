@@ -5,7 +5,7 @@
 
 
 import sys
-sys.path.append("/root/orig_transformer/Disentangled-Mask-Attention-in-Transformers/MT/Fairseq")
+sys.path.append("/root/RWtest/Learning-to-Enhance-the-Text-Position-Embedding-and-Coherence/MT/Fairseq")
 print(sys.path)
 
 from examples.simultaneous_translation.utils.latency import LatencyTraining
