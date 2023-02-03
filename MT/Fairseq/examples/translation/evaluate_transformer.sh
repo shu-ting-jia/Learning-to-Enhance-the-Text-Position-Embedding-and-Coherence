@@ -19,5 +19,5 @@ python3 scripts/average_checkpoints.py \
 PYTHONIOENCODING=utf-8 fairseq-generate data-bin/${dataset} \
     --path checkpoints/${dataset}/transformer/ckpt/checkpoint_avg_last_5.pt \
     --batch-size 128 --beam 5 --remove-bpe \
-    --user-dir examples/translation/disentangled_transformer \
+    --user-dir examples/translation/rw_transformer \
     | tee checkpoints/${dataset}/transformer/evaluate/evaluate.log
