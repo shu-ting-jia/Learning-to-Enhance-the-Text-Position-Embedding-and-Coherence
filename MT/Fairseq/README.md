@@ -58,7 +58,6 @@ This repository is developed under Fairseq framework.
 ```
 
 ## Pretraining weight
-* 
 
   |Dataset|BLEU|Pretrained weights|
   |:------:|:--:|:----------------:|
