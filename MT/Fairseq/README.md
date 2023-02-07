@@ -57,3 +57,13 @@ This repository is developed under Fairseq framework.
   ./checkpoints/wmt14_en_de/transformer/evaluate/evaluate.log
 ```
 
+## Pretraining weight
+* 
+
+  |Dataset|BLEU|Pretrained weights|
+  |:------:|:--:|:----------------:|
+  |WMT'14 En-De|28.18|[Download](https://drive.google.com/file/d/1F_hHJ5TaKKmp2hOUUjT0jnC2sALD4fof/view?usp=share_link)|
+  |IWSLT'14 De-En|34.91|[Download](https://drive.google.com/file/d/1ux5JCGxialLAlBYwp66RqH79_QGijVjp/view?usp=share_link)|
+  
+
+
